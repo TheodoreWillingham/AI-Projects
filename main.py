@@ -13,7 +13,7 @@ def main():
     agent_executor = create_react_agent(model, tools)
 
     print("Welcome! I'm an AI assistant named Timmy created by Theo. Type 'sybau' to exit.")
-    print("You can ask me to perform mat hematical calculations or chat with me.")
+    print("You can ask me to perform mathematical calculations or chat with me.")
     
     while True:
         user_input = input("\nYou: ").strip()  #.strip() gets rid of white space infront
@@ -29,7 +29,7 @@ def main():
         ):
             #Chuncks are parts of responses coming from agent
             if "agent" in chunk and "messages" in chunk["agent"]: #grab all messages from agent
-                for message in chunk["agent"]["message"]:
+                for message in chunk["agent"]["messages"]:
                     print(message.content, end="") # print all message content #steam let's it us see word by word and not just enitre string at once
         
         print() #print new line
