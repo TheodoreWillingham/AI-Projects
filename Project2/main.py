@@ -1,9 +1,9 @@
-import streamlit as st #for creating web app integrated with AI
-import PyPDF2 #for reading PDF
+import streamlit as st  # type: ignore   || for creating web app integrated with AI
+import PyPDF2 # type: ignore || for reading PDF
 import io
 import os
-from openai import OpenAI
-from dotenv import load_dotenv
+from openai import OpenAI # type: ignore
+from dotenv import load_dotenv # type: ignore
 
 load_dotenv() #change back to load_dotenv
 
